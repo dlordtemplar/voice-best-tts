@@ -1,0 +1,29 @@
+plugins {
+    id 'de.dfki.mary.voicebuilding-legacy' version '5.2.0'
+}
+
+group 'de.uni-saarland.coli.voicebuilding2017.best-tts'
+version '0.1-SNAPSHOT'
+
+voice {
+    name = 'best-tts'
+    language = 'en'
+    region = 'US'
+    gender = 'male'
+    type = 'unit selection'
+    description = 'A male US English unit selection voice, built from recordings recorded at Saarland University'
+    license {
+        name = 'Arctic License'
+        shortName = 'Arctic'
+        url = 'http://mary.dfki.de/download/arctic-license.html'
+    }
+    samplingRate = 16000
+}
+
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        if (details.requested.name == 'groovy-all') {
+            details.useTarget group: details.requested.group, name: details.requested.name, version: '2.4.7'
+        }
+    }
+}
