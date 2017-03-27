@@ -87,15 +87,16 @@ task remapLabels(type: Copy) {
     dependsOn convertTextGrids
     filter {
         def phoneMapping = [
-                '<p:>': '_',
-                'i:'  : 'i',
-                'O:'  : 'O',
-                '3`'  : 'r=',
-                'Q'   : 'A',
-                'R'   : 'r',
-                'u:'  : 'u',
-                'aI'  : 'AI',
-                'eI'  : 'EI'
+                '<p:>' : '_',
+                'i:'   : 'i',
+                'O:'   : 'O',
+                '3`'   : 'r=',
+                'Q'    : 'A',
+                'R'    : 'r',
+                'u:'   : 'u',
+                'aI'   : 'AI',
+                'eI'   : 'EI',
+                '<usb>': '_'
         ]
         def fields = it.tokenize()
         if (fields.size() == 3) {
