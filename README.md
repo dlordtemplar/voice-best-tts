@@ -1,6 +1,6 @@
 # voice-best-tts
 
-A male US English unit selection voice for [MaryTTS](http://mary.dfki.de/) built from recordings at Saarland University using the [CMU arctic prompts](http://festvox.org/cmu_arctic/)
+A male US English unit selection voice for [MaryTTS](http://mary.dfki.de/) built from recordings at Saarland University using the [CMU arctic prompts](http://festvox.org/cmu_arctic/).
 
 ## Prerequisites
 
@@ -44,6 +44,6 @@ Then, go to [http://localhost:59125](http://localhost:59125/).
 
 ### Other voices
 
-Find more voices in the [MaryTTS repository](https://github.com/marytts)
+Find more voices in the [MaryTTS repository](https://github.com/marytts).
 
 Credit to [psibre's sample code](https://github.com/psibre/voicebuilding2017-group1-voice), for which this code is heavily based on, and the [CMU male voice readme](https://github.com/marytts/voice-cmu-bdl).
